@@ -102,7 +102,7 @@ fig_bar = px.bar(big_pl.sort_values(by=choices1, ascending=True),
 st.plotly_chart(fig_bar)
 
 # -------------------------------------- ROW 4 ---------------------------
-st.write("3. Bagaimana Persebaran Total Penjualan dalam Hari maupun Jam Tertentu?")
+st.write("### 3. Bagaimana Persebaran Total Penjualan dalam Hari maupun Jam Tertentu?")
 
 # A. Input Data
 persebaran_day_hour = df.groupby(["Day of Week","Hour"])['Total'].sum().reset_index()
@@ -121,7 +121,7 @@ st.plotly_chart(fig_heatmap)
 
 # -------------------------------------- ROW 5 ---------------------------
 
-st.write("4. Bagaimana Perbandingan Gender Pembeli di Setiap Product Line?")
+st.write("### 4. Bagaimana Perbandingan Gender Pembeli di Setiap Product Line?")
 
 # A. Persiapan Data
 gen_cus = pd.crosstab(
