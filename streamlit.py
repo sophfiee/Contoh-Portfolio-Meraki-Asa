@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 # -------------------------------------- Read dataset ------------------------------
-df = pd.read_pickle("data/data_sales_dash.pkl")
+df = pd.read_pickle("data_sales_dash.pkl")
 
 # -------------------------------------- Membuat Sidebar ---------------------------
 
